@@ -4529,7 +4529,6 @@ MEDIA QUERIES
     cursor: pointer;
     background-color: white;
     z-index: 2;
-    border: 1px solid red;
 }
 
 .scroll-right {
