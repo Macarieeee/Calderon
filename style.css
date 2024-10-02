@@ -4522,18 +4522,19 @@ MEDIA QUERIES
 
 .white-space-right{
   position: absolute;
-    left: 1440px;
+    right: 0vw;
     height: 80px;
-    width: 52px;
+    width: 32px;
     top: 30px;
     cursor: pointer;
     background-color: white;
     z-index: 2;
+    border: 1px solid red;
 }
 
 .scroll-right {
   position: absolute;
-  left: 94vw;
+  right: 1vw;
   top: 50px;
   height: 20px;
   width: 12px;
