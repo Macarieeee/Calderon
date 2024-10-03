@@ -4729,3 +4729,128 @@ MEDIA QUERIES
 .align-r{
   text-align: right!important;
 }
+
+/* Event Menu */
+
+.title-content{
+  display: flex;
+  position: relative;
+  height: 10vh;
+}
+
+.arrow{
+  margin-top: auto;
+  margin-left: auto;
+  left: 2vw;
+  top: 3.1vh;
+  position: absolute;
+}
+
+.arrow img{
+  cursor: pointer;
+}
+
+.event-title{
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+
+.main-content{
+  display: flex;
+  background-color: #F4F4F4;
+  height: 90vh;
+  position: relative;
+}
+
+.info{
+  position: absolute;
+  bottom: 2vh;
+  left: 35vw;
+}
+
+.menu-content{
+  width: 60vw;
+}
+
+.menus{
+  display: flex;
+  margin-top: 5vh;
+}
+
+.menu-category{
+  text-align: center!important;
+  width: 15vw!important;
+  padding-bottom: 19px !important;
+  letter-spacing: .08em!important;
+  text-transform: uppercase!important;
+  cursor: pointer!important;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: -1px!important;
+  padding-bottom: 32px!important;
+  padding-top: 32px;
+  padding-left: 32px!important;
+  padding-right: 32px!important;
+  font-size: 14px!important;
+  line-height: 1.286em!important;
+  text-decoration: none!important;
+  color: #5E5E5E!important;
+  margin-right: 3vw;
+  margin-left: 2vw;
+}
+
+.products{
+  margin-top: 4vh;
+  margin-left: 2vw;
+  font-size: 18px;
+}
+
+.product1{
+  margin-top: 2vh;
+  text-align: left!important;
+}
+
+.menu-itemz{
+  margin-top: 2vh;
+  text-align: left!important;
+}
+
+@media (max-width: 768px) {
+  .main-content{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menu-content{
+    width: 100vw;
+  }
+
+  .menu-category{
+    text-align: center!important;
+    width: 30vw!important;
+    padding-bottom: 19px !important;
+    letter-spacing: .08em!important;
+    text-transform: uppercase!important;
+    cursor: pointer!important;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: -1px!important;
+    padding-bottom: 32px!important;
+    padding-top: 32px;
+    padding-left: 32px!important;
+    padding-right: 32px!important;
+    font-size: 14px!important;
+    line-height: 1.286em!important;
+    text-decoration: none!important;
+    color: #5E5E5E!important;
+    margin-right: 3vw;
+    margin-left: 2vw;
+  }
+}

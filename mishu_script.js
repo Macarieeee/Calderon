@@ -13,6 +13,18 @@ function filterCategory(category) {
       }
   }
 }
+
+function filterEvent(category) {
+  var items = document.getElementsByClassName('menu-itemz');
+  
+  for (var i = 0; i < items.length; i++) {
+          if (items[i].classList.contains(category)) {
+              items[i].style.display = 'block'; // Show matching category
+          } else {
+              items[i].style.display = 'none'; // Hide other categories
+          }
+      }
+  }
 const buttonRight = document.getElementById('slideRight');
   const buttonLeft = document.getElementById('slideLeft');
 
