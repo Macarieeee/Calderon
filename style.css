@@ -4827,6 +4827,7 @@ MEDIA QUERIES
     display: flex;
     flex-direction: column;
     height: auto;
+    position: relative;
   }
 
   .menu-content{
@@ -4853,4 +4854,11 @@ MEDIA QUERIES
     margin-right: 3vw;
     margin-left: 2vw;
   }
+
+  .info{
+    position: absolute;
+    bottom: -70px;
+    left: 0px;
+  }
+  
 }
