@@ -4597,6 +4597,22 @@ MEDIA QUERIES
   margin-right: 20px;
 }
 
+.menu-itemzz {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  height: 250px;
+  margin-bottom: 35px;
+}
+
+.menu-itemzz img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+
 .menu-item-details {
   flex: 1;
 }
@@ -4676,6 +4692,19 @@ MEDIA QUERIES
   height: 100px;
 }
 
+.menu-itemzz {
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  text-align: center;
+}
+
+.menu-itemzz img {
+  margin: 0 0 10px 0;
+  width: 100px;
+  height: 100px;
+}
+
 .menu-item-details {
   width: 100%;
 }
@@ -4713,9 +4742,10 @@ MEDIA QUERIES
   text-align: left;
 }
 
-.about h1, h2, div{
+.textcenter{
   text-align: center!important;
 }
+
 
 .underline{
   border-bottom:1px solid #dadada ;

@@ -25,6 +25,18 @@ function filterEvent(category) {
           }
       }
   }
+
+  function filterEventz(category) {
+    var items = document.getElementsByClassName('menu-itemzz');
+    
+    for (var i = 0; i < items.length; i++) {
+            if (items[i].classList.contains(category)) {
+                items[i].style.display = 'flex'; // Show matching category
+            } else {
+                items[i].style.display = 'none'; // Hide other categories
+            }
+        }
+    }
 const buttonRight = document.getElementById('slideRight');
   const buttonLeft = document.getElementById('slideLeft');
 
