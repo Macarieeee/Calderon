@@ -213,6 +213,31 @@
 
   </style>
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".corporate-menus__tab");
+    const menus = document.querySelectorAll(".corporate-menu");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        const targetId = tab.getAttribute("data-target");
+
+        // scoatem active de pe toate tab-urile
+        tabs.forEach(t => t.classList.remove("is-active"));
+        // ascundem toate meniurile
+        menus.forEach(m => m.classList.remove("is-active"));
+
+        // activam tab-ul curent
+        tab.classList.add("is-active");
+        // afisam meniul corespunzator
+        const targetMenu = document.getElementById(targetId);
+        if (targetMenu) {
+          targetMenu.classList.add("is-active");
+        }
+      });
+    });
+  });
+</script>
 
 <body class="body-header1">
    
@@ -487,6 +512,116 @@
     </div>
     <!--.container-->
   </section>
+  <section class="corporate-menus">
+  <div class="corporate-menus__container">
+    <h1 class="corporate-menus__title">Meniu petreceri corporate</h1>
+
+    <!-- TABS -->
+    <div class="corporate-menus__tabs">
+      <button class="corporate-menus__tab is-active" data-target="menu1">
+        Meniu 1
+      </button>
+      <button class="corporate-menus__tab" data-target="menu2">
+        Meniu 2
+      </button>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="corporate-menus__content">
+      <!-- MENIU 1 -->
+      <article id="menu1" class="corporate-menu is-active">
+        <h2 class="corporate-menu__subtitle">Meniu 1 – Petreceri corporate</h2>
+
+        <div class="corporate-menu__section">
+          <h3>Gustare tradițional românească</h3>
+          <p>
+            Tobă, lebăr, pastramă de porc, șorici, specialitate mușchi file afumat,
+            brânză, ceapă roșie, jumări, șunculiță ardelenească, măsline.
+          </p>
+        </div>
+
+        <div class="corporate-menu__section">
+          <h3>Fel principal</h3>
+          <p>
+            Pomana porcului, mămăliguță cu brânză rasă, salată de murături asortată
+            făcută în casă, cartofi prăjiți.
+          </p>
+        </div>
+
+        <div class="corporate-menu__section">
+          <h3>Desert</h3>
+          <p>La alegere: plăcintă cu iaurt sau tiramisu.</p>
+        </div>
+
+        <div class="corporate-menu__section corporate-menu__section--grid">
+          <div>
+            <h3>Long drinks</h3>
+            <p>Cuba Libre, Mojito, Aperol, Hugo.</p>
+          </div>
+          <div>
+            <h3>Soft drinks</h3>
+            <p>Apă plată, apă minerală, Cola, Fanta, Sprite, espresso.</p>
+          </div>
+          <div>
+            <h3>Vinul casei</h3>
+            <p>Alb, rose, roșu – open bar.</p>
+          </div>
+        </div>
+
+        <div class="corporate-menu__price">
+          Preț: <span>220 lei / persoană</span>
+        </div>
+      </article>
+
+      <!-- MENIU 2 -->
+      <article id="menu2" class="corporate-menu">
+        <h2 class="corporate-menu__subtitle">Meniu 2 – Petreceri corporate</h2>
+
+        <div class="corporate-menu__section">
+          <h3>Gustare antipasti</h3>
+          <p>
+            Prosciutto crudo, gorgonzola, brie, mozzarella bocconcini, mortadela,
+            pastramă de vită, Parmigiano Reggiano, salam dolce, struguri, rodie,
+            nuci, focaccia.
+          </p>
+        </div>
+
+        <div class="corporate-menu__section">
+          <h3>Fel de bază – Mixt grill</h3>
+          <p>
+            Ceafă de porc, pulpă de pui, mici, cârnați, cartofi prăjiți,
+            salată de sezon.
+          </p>
+        </div>
+
+        <div class="corporate-menu__section">
+          <h3>Desert</h3>
+          <p>Plăcintă cu iaurt sau tiramisu.</p>
+        </div>
+
+        <div class="corporate-menu__section corporate-menu__section--grid">
+          <div>
+            <h3>Long drinks</h3>
+            <p>Cuba Libre, Mojito, Aperol, Hugo.</p>
+          </div>
+          <div>
+            <h3>Soft drinks</h3>
+            <p>Apă plată, apă minerală, Cola, Fanta, Sprite, espresso.</p>
+          </div>
+          <div>
+            <h3>Vin</h3>
+            <p>Vin la alegere.</p>
+          </div>
+        </div>
+
+        <div class="corporate-menu__price">
+          Preț: <span>250 lei / persoană</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
   <!-- /SECTION 1 -->
   <!-- SECTION 2 -->
   <section id="home-wine" class="home-widget">
