@@ -5024,3 +5024,241 @@ MEDIA QUERIES
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+
+/* === GENERAL CONTAINER === */
+
+.nye-hero {
+  padding: 80px 20px;
+  background: transparent;
+  font-family: "Playfair Display", serif;
+}
+
+.nye-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* === LEFT SIDE === */
+
+.nye-left {
+  flex: 1;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nye-badge {
+  display: inline-block;
+  padding: 8px 22px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #e6b71e;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.nye-title {
+  font-size: 48px;
+  margin: 24px 0 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.nye-meta {
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+
+.nye-desc {
+  max-width: 540px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+/* === PRICE BOX === */
+
+.nye-price-box {
+  margin: 26px auto 0;
+  max-width: 420px;
+  border-radius: 999px;
+  padding: 10px 22px;
+  border: 1px solid rgba(251, 191, 36, 0.7);
+  background:  rgba(17, 24, 39, 0.95);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 16px;
+  font-size: 14px;
+}
+
+
+.nye-price-box .label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  color: #fef3c7;
+}
+
+.nye-price-box .price {
+  font-weight: 700;
+  font-size: 16px;
+  color: #facc15;
+}
+
+.nye-price-box .note {
+  opacity: 0.9;
+}
+
+.nye-price-box .menu-link {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #facc15;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  transition: 0.25s ease;
+}
+
+.nye-price-box .menu-link:hover {
+  color: #ffe58f;
+}
+
+.rezervari{
+  color: #444343;
+}
+
+/* === RIGHT SIDE (placeholder) === */
+
+.nye-right {
+  flex: 1;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.newYearImg {
+  border-radius: 20px!important;
+}
+
+/* === RESPONSIVE === */
+
+@media (max-width: 900px) {
+  .nye-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nye-left {
+    text-align: center;
+  }
+
+  .nye-right {
+    width: 100%;
+  }
+
+  .nye-title {
+    font-size: 38px;
+  }
+}
+
+/* === MENU SECTION === */
+
+.menu-section {
+  margin-top: 10vh;
+  background: #ffffff;
+  padding: 80px 20px;
+  color: #111;
+  font-family: "Inter", sans-serif;
+  display: block!important;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #000;
+}
+
+.menu-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* CARDS */
+
+.menu-card h3 {
+  color: #d4af37; /* auriu elegant */
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.menu-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+}
+
+.menu-card ul li {
+  font-size: 15px;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.menu-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #d4af37;
+}
+
+/* === RESPONSIVE === */
+
+@media (max-width: 1000px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
