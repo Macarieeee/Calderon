@@ -67,6 +67,111 @@ https://matchthemes.com
 
  ************************************/
 
+/* New Year's Eve event */
+.new-year-event {
+  padding: 72px 24px;
+  background: #140d09;
+  color: #f6ecdb;
+  text-align: center;
+}
+
+.new-year-event__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.new-year-event__eyebrow {
+  margin-bottom: 14px;
+  color: #d9b57a;
+  font-family: var(--headings-font);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.new-year-event h2 {
+  margin: 0 0 16px;
+  color: #f6ecdb;
+  font-size: clamp(32px, 5vw, 56px);
+}
+
+.new-year-event__intro {
+  margin-bottom: 36px;
+  font-size: 18px;
+}
+
+.new-year-event__posters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.new-year-event__poster {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #715333;
+  border-radius: 8px;
+}
+
+.new-year-event__poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.new-year-event__hint {
+  margin: 20px 0 28px;
+  font-size: 14px;
+  color: #d9c8b4;
+}
+
+.new-year-event__reservations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.new-year-event__reservations p {
+  margin: 0;
+}
+
+.new-year-event__reservations a {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 1px solid #d9b57a;
+  border-radius: 4px;
+  color: #f6ecdb;
+  font-family: var(--headings-font);
+}
+
+.new-year-event__reservations a:hover {
+  background: #d9b57a;
+  color: #140d09;
+}
+
+.new-year-event a:focus-visible {
+  outline: 3px solid #f6ecdb;
+  outline-offset: 5px;
+}
+
+@media (max-width: 767px) {
+  .new-year-event {
+    padding: 48px 16px;
+  }
+
+  .new-year-event__posters {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .new-year-event__reservations p {
+    flex-basis: 100%;
+  }
+}
+
 /* RESET STYLES */
 
 *,
